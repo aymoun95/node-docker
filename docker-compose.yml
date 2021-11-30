@@ -4,6 +4,7 @@ services:
     image: nginx:alpine
   node-app:
     build: .
+    image: aymen95/node-app
     environment:
       - PORT=3000
     depends_on:
